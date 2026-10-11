@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#7254ce">
+  <meta name="description" content="Meet Penny. Turn your income into a simple plan for spending, saving, and your next chapter.">
+  <title>Penny — A little clarity. A lot more possibility.</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview" aria-label="Penny home"><span class="brand-mark">p<span>·</span></span>penny<span class="brand-dot">.</span></a>
+    <div class="workspace"><span class="workspace-avatar">P</span><div>My money space<small>Personal budget</small></div><span class="workspace-chevron">⌄</span></div>
+    <span class="nav-caption">YOUR MONEY, SIMPLIFIED</span>
+    <nav id="navigation" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom">
+      <div class="little-note"><span class="note-spark">✳</span><strong>Small steps.<br>Big possibilities.</strong><p>Your next chapter starts with a little clarity.</p><button class="text-btn" data-action="navigate" data-page="grow">Make a money plan <span>↗</span></button></div>
+      <button class="settings-link" data-action="settings"><span data-icon="settings"></span> Preferences</button>
+      <div class="profile"><span class="profile-avatar">Y</span><div>Your personal space<small>Saved on this device</small></div><span class="online-dot"></span></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">My workspace <span>/</span> <strong id="page-label">Overview</strong></div><div class="topbar-right"><span class="local-status"><i></i> On-device storage</span><button class="icon-button" data-action="help" aria-label="How Penny works"><span data-icon="help"></span></button><span class="top-avatar">Y</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="app-footer"><span>Made for a little more peace of mind.</span><button class="text-btn" data-action="help">How your numbers work <span>↗</span></button></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
